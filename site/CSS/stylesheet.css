@@ -1,0 +1,215 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../images/baarishein.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(15px);
+  height: 97.8vh;
+  width: 100%;
+}
+
+
+.search-container i {
+    position: absolute;
+  }
+          
+ .search-container {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }       
+          
+          
+.input-field {
+   width: 90%;
+   padding: 12px;
+   text-align: left;
+   font-size: 22px;
+   margin-left: 1%;
+   background-image: url('../images/download.png');
+   background-position: 6px 6px;
+   background-repeat: no-repeat;
+   padding: 14px 20px 12px 70px;
+   border: none;
+  }
+
+ .controls {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  /*margin-top: 14vh;*/
+  bottom: 4vh;
+}
+
+.controls .action-button{
+  text-align: center;
+  /*margin-top: -3%;*/
+  margin-left: 5%
+}
+#thumbnail{
+  width:55px;
+  height: 55px;
+  bottom: 3vh;
+  /*margin-top: 20px;*/
+  margin-left: 1%;
+  text-align:left;
+  position: absolute;
+}
+
+.action-button .fa-pp:before{
+  content:'\f04b';
+}
+.action-button .active .fa-pp:before{
+  content:'\f04c';
+}
+
+.action-button .progressbar{
+  height:10px;
+  margin: 0 0.5% 0 0.5%;
+  position:relative;
+  background:#262626;
+  border-radius: 50px;
+  width: 32%;
+  display: inline-block;
+  top: -0.25vh;
+   cursor: pointer;
+}
+
+.action-button .progressbar #bar{
+  position: relative;
+  border-radius: 50px;
+  float: left;
+  width: 0%;
+  display:inline-block;
+  height:inherit;
+  /*top: inherit;*/
+  background:#bc3958;
+  box-shadow:0 0 5px 0 #bc3958;
+  transition: width 0.1s linear;
+}
+
+.action-button .play-current-time{
+  position: relative;
+  margin-left: 1%;
+  color: white;
+  top: -0.25vh;
+  /*top: -3vh;*/
+}
+
+.action-button .play-total-time{
+  position: relative;
+  margin-right: 1%;
+  color: white;
+  top: -0.25vh;
+}
+
+.action-button a{
+  font-size:1.5em;
+  margin-left: 1%;
+  margin-right: 1%;
+  display:inline-block;
+  position: relative;
+  color: white;
+}
+.action-button a:hover,
+.action-button a.active{
+  color:#ccc;
+}
+.action-button a .fa{
+  font-size:inherit;
+}
+.action-button .Loop {
+  color: #bc3958;
+}
+.action-button .liked {
+  color: #bc3958;
+}
+
+.middle{
+  height: 72vh;
+}
+.cover {
+  width: 47%;
+  height: inherit;
+  float: left;
+  margin-left: 1%;
+}
+#right {
+  width: 47%;
+  float: left;
+  margin-left: 3%;
+}
+h1 {
+  text-align: center;
+  padding: 5px;
+}
+#demo {
+  font-size: 1.5em;
+
+}
+ol{
+  list-style-position: inside;
+}
+ol li{
+  padding: 10px 25px;
+}
+ol li:hover{
+  color: white;
+  background: black;
+}
+.favorite .fas {
+  color: #bc3958;
+}
+
+@media only screen and (min-height: 1200px) {
+  body{
+    height: 92vh;
+  }
+  .search-container {
+    width: 96%;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+  }  
+  .action-button a{
+   font-size: 2em;
+   margin-left: 1.75%;
+   margin-right: 1.75%;
+   }
+   #thumbnail{
+    visibility: hidden;
+   }
+   .action-button .share{
+    visibility: hidden;
+   }
+   #right{
+    visibility: hidden;
+   }
+   .cover{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 1%;
+   }
+   .controls {
+    bottom: 6vh;
+   }
+}
+/*.action-button .volume{
+   font-size:1.5em;
+  margin-left: -0.75%;
+  margin-right: 0.5%;
+  top: -15px;
+  text-align:center;
+  display:inline-block;
+  position: relative;
+}*/
+

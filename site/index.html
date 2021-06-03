@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Music Player</title>
+	<link rel="stylesheet" href="CSS/stylesheet.css">
+	<script src="https://kit.fontawesome.com/cfea4232fc.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+	
+<div class="search-container">
+   	<form action="/action_page.php">
+		<input class="input-field" type="text" placeholder="Search music" >
+				
+	</form>
+</div>
+	
+<div class="middle" >
+	<img src="images/Baarishein.jpg" class="cover" />
+	<div id="right">
+		<h1> Favorites <i class="far fa-heart"></i></h1>
+	<ol id="demo"></ol>
+</div>
+</div>
+<audio src="music/Baarishein.mp3" id="audio"></audio>
+
+<img src="images/Baarishein.jpg" id="thumbnail" />
+<div class="controls">
+	<div class="action-button">
+		<a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
+		<a href="#" id="play-pause"><i class="fas fa-play"></i></a>
+		<a href="#" class="next"><i class="fa fa-step-forward"></i></a>
+		<span class="play-current-time">00:00</span>
+		<div class="progressbar">
+			<div id="bar"></div>
+		</div>
+		<span class="play-total-time">00:00</span>
+		<a class="loop"><i class="fas fa-redo-alt"></i></a>
+		<a href="#" class="favorite"><i class="far fa-heart"></i></a>
+		<a href="#" class="share"><i class="fas fa-share"></i></a>
+	</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
